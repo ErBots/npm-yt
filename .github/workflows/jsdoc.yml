@@ -1,9 +1,9 @@
 name: Deploy JSDoc to GitHub Pages
 
 on:
-  workflow_dispatch:
+  push:
     branches:
-      - master
+      - master  # Gantilah jika branch utama kamu bukan `main`
 
 permissions:
   contents: write
@@ -19,16 +19,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '18'
 
-      - name: Install JSDoc
-        run: npm install -g jsdoc
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install JSDoc & Theme
+        run: npm install --save-dev jsdoc minami
 
       - name: Generate JSDoc
-        run: npx jsdoc -r . -d jsdocs
+        run: npx jsdoc -c jsdoc.json
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: jsdocs
+          clean: true
