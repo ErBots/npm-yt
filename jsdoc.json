@@ -5,13 +5,14 @@
     "exclude": ["node_modules"]
   },
   "opts": {
-    "destination": "jsdocs",
-    "recurse": true,
-    "template": "node_modules/minami"
+    "destination": "jsdocs"
   },
   "templates": {
-    "default": {
-      "includeDate": false
+    "clean-jsdoc-theme": {
+      "theme": "dark",
+      "search": true,
+      "linenums": true
     }
-  }
+  },
+  "plugins": ["node_modules/clean-jsdoc-theme"]
 }
