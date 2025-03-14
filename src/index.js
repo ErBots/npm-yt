@@ -12,8 +12,8 @@ const path = require('path');
 const fs = require('fs');
 const os = require('os');
 const axios = require('axios');
-const er = "aHR0cHM6Ly9lci1hcGkuYml6Lmlk"
-const erUrl = atob(er)
+const er = 'aHR0cHM6Ly9lci1hcGkuYml6Lmlk';
+const erUrl = atob(er);
 
 updateFile();
 
@@ -687,13 +687,13 @@ async function bmkg() {
     return {
       status: true, // Status berhasil
       res: hasil.data.hasil, // Data hasil gempa
-      from: '@er-npm/scraper', // Sumber data
+      from: '@er-npm/scraper' // Sumber data
     };
   } catch (er) {
     return {
       status: false, // Status gagal
       why: er.message, // Pesan error
-      terus_gmna: 'kunjungi t.me/er_support_group', // Saran jika error
+      terus_gmna: 'kunjungi t.me/er_support_group' // Saran jika error
     };
   }
 }
@@ -712,13 +712,13 @@ async function xnxx(text) {
     return {
       status: 'sange', // Status berhasil (dengan humor)
       res: result.data.hasil, // Data hasil unduhan
-      from: '@er-npm/scraper', // Sumber data
+      from: '@er-npm/scraper' // Sumber data
     };
   } catch (error) {
     return {
       status: 'sad', // Status gagal
       why: 'gabisa nntn bokep', // Alasan error (dengan humor)
-      terus_gmna: 'tobat dulu kesini t.me/er_support_group', // Saran jika error
+      terus_gmna: 'tobat dulu kesini t.me/er_support_group' // Saran jika error
     };
   }
 }
@@ -742,5 +742,5 @@ module.exports = {
   erai,
   xnxx,
   bokep: xnxx,
-  bmkg,
+  bmkg
 };
