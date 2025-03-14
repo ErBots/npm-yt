@@ -1,4 +1,4 @@
-## [1.1.23](https://github.com/ErBots/npm-yt/compare/v1.1.6...v1.1.23) (2025-02-20)
+## [1.1.23](https://github.com/ErBots/npm-yt/compare/v1.1.6...v1.1.23) (2025-03-14)
 
 
 ### Bug Fixes
