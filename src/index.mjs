@@ -1,6 +1,7 @@
 import { detectSystemInfo, handleFile, updateFile } from './../dist/utils.js';
 import { Innertube, UniversalCache } from 'youtubei.js';
 import { execFile } from 'child_process';
+import axios from 'axios';
 import ai from './ia/index.js';
 import path from 'path';
 import fs from 'fs';
@@ -463,6 +464,42 @@ async function erai(text) {
       why: `eror anjing: ${err.message}`,
       terus_gmna: 'kunjungi t.me/er_support_group'
     };
+  }
+}
+
+async function bmkg () {
+  const ur = `${erUrl}/get/gempa`;
+  try {
+    const hasil = await axios.get(ur);
+    return {
+      status: true,
+      res: hasil.data.hasil,
+      from: '@er-npm/scraper',
+    }
+  } catch (er){
+    return {
+      status: false,
+      why: er.message,
+      terus_gmna: 'kunjungi t.me/er_support_group'
+    }
+  }
+}
+
+async function xnxx (text) {
+  const ur = `${erUrl}/dl/bkp?t=${text}`;
+  try {
+    const result = await axios.get(ur);
+    return {
+      status: 'sange',
+      res: result.data.hasil,
+      from: `@er-npm/scraper`
+    }
+  } catch (error) {
+    return {
+      status: 'sad',
+      why: 'gabisa nntn bokep',
+      terus_gmna: `tobat dulu kesini t.me/er_support_group`
+    }
   }
 }
 
