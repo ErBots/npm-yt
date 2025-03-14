@@ -1,0 +1,31 @@
+name: Deploy JSDoc to GitHub Pages
+
+on:
+  workflow_dispatch:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install JSDoc
+        run: npm install -g jsdoc
+
+      - name: Generate JSDoc
+        run: npx jsdoc -r . -d jsdocs
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: jsdocs
