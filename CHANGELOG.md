@@ -3,6 +3,7 @@
 
 ### Bug Fixes
 
+* .github/workflows/jsdoc.yml ([d848dac](https://github.com/ErBots/npm-yt/commit/d848dac64fb16d89929acedfe6a1154690a5d330))
 * add jsdocs comment ([01c4cc0](https://github.com/ErBots/npm-yt/commit/01c4cc05ff1bca8b6acabd5c78b71ce866854e64))
 * changelog.yml ([d0947b9](https://github.com/ErBots/npm-yt/commit/d0947b9d2e7fa7e474f2f77a5e9c3195c213dcf0))
 * fixing import on mjs file ([a6e9aac](https://github.com/ErBots/npm-yt/commit/a6e9aac226607a251efae3033adbca0a8a8a0914))
