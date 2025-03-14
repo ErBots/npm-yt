@@ -1,17 +1,16 @@
 {
   "source": {
     "include": ["src"],
-    "includePattern": ".js$",
-    "excludePattern": "(node_modules/|docs)"
-  },
-  "plugins": ["plugins/markdown"],
-  "templates": {
-    "cleverLinks": true,
-    "monospaceLinks": true
+    "exclude": ["node_modules"]
   },
   "opts": {
+    "destination": "jsdocs",
     "recurse": true,
-    "destination": "./src/",
-    "readme": "./README.md"
+    "template": "node_modules/minami"
+  },
+  "templates": {
+    "default": {
+      "includeDate": false
+    }
   }
 }
