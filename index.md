@@ -1,17 +1,19 @@
-# **@er-npm/scraper Documentation**  
+# 📌 Dokumentasi @er-npm/scraper
+Selamat datang di dokumentasi **@er-npm/scraper**!  
+Di sini kamu bisa menemukan informasi lengkap mengenai fitur dan cara menggunakan package ini.
 
-Welcome to the **@er-npm/scraper** documentation!  
-Here, you will find comprehensive information about its usage, functions, and features.  
+---
 
-## **Features**  
-- **AI-Powered Tools** – Supports various AI models for text and image generation.  
-- **Image Generation** – Generate AI-based images with different styles and prompts.  
-- **Downloader** – Fetch media from multiple sources with ease.  
-- **Spiritual Companion (Khodam)** – Provides insights and guidance based on spiritual beliefs.  
-- **BMKG Data** – Get real-time weather and earthquake updates from Indonesia's BMKG.  
+## 🎯 Fitur Utama
+✅ AI: Dukungan berbagai model AI untuk generate teks & gambar  
+✅ Downloader: Bisa download dari berbagai platform  
+✅ BMKG: Dapatkan informasi cuaca & gempa terbaru  
+✅ Khodam: Eksperimen fitur spiritual & mistis  
+✅ UI Responsif: Menggunakan tema **Ink-Docstrap** untuk tampilan elegan  
 
-## 🚀 **Getting Started**  
-To install, use the following commands:  
+---
+
+## 🚀 Cara Memulai
 
 ```sh
 npm i @er-npm/scraper
