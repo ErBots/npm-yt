@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Install JSDoc & DocStrap
-        run: npm install --save-dev jsdoc ink-docstrap
+        run: npm install --save-dev jsdoc ink-docstrap taffydb
 
       - name: Create output directory
         run: mkdir -p jsdocs 
