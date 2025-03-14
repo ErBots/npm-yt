@@ -7,6 +7,7 @@
 * changelog.yml ([d0947b9](https://github.com/ErBots/npm-yt/commit/d0947b9d2e7fa7e474f2f77a5e9c3195c213dcf0))
 * fixing import on mjs file ([a6e9aac](https://github.com/ErBots/npm-yt/commit/a6e9aac226607a251efae3033adbca0a8a8a0914))
 * import xnxx & bmkg ([e3f51f2](https://github.com/ErBots/npm-yt/commit/e3f51f2a63eb12b6e90b3fef03fba9bc7ba9ec4e))
+* jsdocs.json ([0eabcde](https://github.com/ErBots/npm-yt/commit/0eabcdeffe5169011319a39470e9cbc9456aaf0c))
 * jsdocs.yml ([c5bc00c](https://github.com/ErBots/npm-yt/commit/c5bc00c4645e7e5baebeae31ae9bd714123c53ec))
 * mybe ([94f3ef1](https://github.com/ErBots/npm-yt/commit/94f3ef1ea0c84f3dd17d02cc106e064b5f8f4b8e))
 * Unnecessary ([8e39fae](https://github.com/ErBots/npm-yt/commit/8e39fae25222d0dccbe3ce239a3b729f42b85767))
