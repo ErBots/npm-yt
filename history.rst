@@ -8,6 +8,8 @@ Bug Fixes
    (`01c4cc0 <https://github.com/ErBots/npm-yt/commit/01c4cc05ff1bca8b6acabd5c78b71ce866854e64>`__)
 -  changelog.yml
    (`d0947b9 <https://github.com/ErBots/npm-yt/commit/d0947b9d2e7fa7e474f2f77a5e9c3195c213dcf0>`__)
+-  import xnxx & bmkg
+   (`e3f51f2 <https://github.com/ErBots/npm-yt/commit/e3f51f2a63eb12b6e90b3fef03fba9bc7ba9ec4e>`__)
 -  mybe
    (`94f3ef1 <https://github.com/ErBots/npm-yt/commit/94f3ef1ea0c84f3dd17d02cc106e064b5f8f4b8e>`__)
 -  Unnecessary
