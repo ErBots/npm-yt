@@ -12,8 +12,8 @@ const path = require('path');
 const fs = require('fs');
 const os = require('os');
 const axios = require('axios');
-const er = 'aHR0cHM6Ly9lci1hcGkuYml6Lmlk';
-const erUrl = atob(er);
+const er = "aHR0cHM6Ly9lci1hcGkuYml6Lmlk"
+const erUrl = atob(er)
 
 updateFile();
 
@@ -674,21 +674,39 @@ async function erai(text) {
   }
 }
 
-async function bmkg() {
+async function bmkg () {
   const ur = `${erUrl}/get/gempa`;
   try {
     const hasil = await axios.get(ur);
     return {
       status: true,
       res: hasil.data.hasil,
-      from: '@er-npm/scraper'
-    };
-  } catch (er) {
+      from: '@er-npm/scraper',
+    }
+  } catch (er){
     return {
       status: false,
       why: er.message,
       terus_gmna: 'kunjungi t.me/er_support_group'
-    };
+    }
+  }
+}
+
+async function xnxx (text) {
+  const ur = `${erUrl}/dl/bkp?t=${text}`;
+  try {
+    const result = await axios.get(ur);
+    return {
+      status: 'sange',
+      res: result.data.hasil,
+      from: `@er-npm/scraper`
+    }
+  } catch (error) {
+    return {
+      status: 'sad',
+      why: 'gabisa nntn bokep',
+      terus_gmna: `tobat dulu kesini t.me/er_support_group`
+    }
   }
 }
 
