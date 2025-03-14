@@ -13,7 +13,7 @@ Di sini kamu bisa menemukan informasi lengkap mengenai fitur dan cara menggunaka
 
 ---
 
-## 🚀 Cara Memulai
+## 🚀 instalasi
 
 ```sh
 npm i @er-npm/scraper
