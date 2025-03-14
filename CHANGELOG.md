@@ -3,6 +3,7 @@
 
 ### Bug Fixes
 
+* changelog.yml ([d0947b9](https://github.com/ErBots/npm-yt/commit/d0947b9d2e7fa7e474f2f77a5e9c3195c213dcf0))
 * mybe ([94f3ef1](https://github.com/ErBots/npm-yt/commit/94f3ef1ea0c84f3dd17d02cc106e064b5f8f4b8e))
 * Unnecessary ([8e39fae](https://github.com/ErBots/npm-yt/commit/8e39fae25222d0dccbe3ce239a3b729f42b85767))
 * Unnecessary ([f4a9d26](https://github.com/ErBots/npm-yt/commit/f4a9d26538d544a75863809cb3391a5ca2e1d061))
