@@ -24,14 +24,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install JSDoc & Theme
-        run: npm install --save-dev jsdoc better-docs
+      - name: Install JSDoc & DocStrap
+        run: npm install --save-dev jsdoc ink-docstrap
 
       - name: Create output directory
-        run: mkdir -p jsdocs
+        run: mkdir -p jsdocs 
 
       - name: Generate JSDoc
-        run: npx jsdoc -c jsdoc.json
+        run: npx jsdoc -c jsdoc.json --readme index.md
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
