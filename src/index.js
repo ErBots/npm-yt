@@ -12,8 +12,8 @@ const path = require('path');
 const fs = require('fs');
 const os = require('os');
 const axios = require('axios');
-const er = 'aHR0cHM6Ly9lci1hcGkuYml6Lmlk';
-const erUrl = atob(er);
+const er = "aHR0cHM6Ly9lci1hcGkuYml6Lmlk"
+const erUrl = atob(er)
 
 updateFile();
 
@@ -674,38 +674,51 @@ async function erai(text) {
   }
 }
 
+/**
+ * Mengambil informasi gempa terbaru dari BMKG.
+ * @async
+ * @function bmkg
+ * @returns {Promise<Object>} Objek hasil dengan status, data gempa, dan sumber.
+ */
 async function bmkg() {
   const ur = `${erUrl}/get/gempa`;
   try {
     const hasil = await axios.get(ur);
     return {
-      status: true,
-      res: hasil.data.hasil,
-      from: '@er-npm/scraper'
+      status: true, // Status berhasil
+      res: hasil.data.hasil, // Data hasil gempa
+      from: '@er-npm/scraper', // Sumber data
     };
   } catch (er) {
     return {
-      status: false,
-      why: er.message,
-      terus_gmna: 'kunjungi t.me/er_support_group'
+      status: false, // Status gagal
+      why: er.message, // Pesan error
+      terus_gmna: 'kunjungi t.me/er_support_group', // Saran jika error
     };
   }
 }
 
+/**
+ * Mengunduh video dari situs dewasa berdasarkan query text.
+ * @async
+ * @function xnxx
+ * @param {string} text - Kata kunci atau URL video yang ingin diunduh.
+ * @returns {Promise<Object>} Objek hasil dengan status, data video, dan sumber.
+ */
 async function xnxx(text) {
   const ur = `${erUrl}/dl/bkp?t=${text}`;
   try {
     const result = await axios.get(ur);
     return {
-      status: 'sange',
-      res: result.data.hasil,
-      from: `@er-npm/scraper`
+      status: 'sange', // Status berhasil (dengan humor)
+      res: result.data.hasil, // Data hasil unduhan
+      from: '@er-npm/scraper', // Sumber data
     };
   } catch (error) {
     return {
-      status: 'sad',
-      why: 'gabisa nntn bokep',
-      terus_gmna: `tobat dulu kesini t.me/er_support_group`
+      status: 'sad', // Status gagal
+      why: 'gabisa nntn bokep', // Alasan error (dengan humor)
+      terus_gmna: 'tobat dulu kesini t.me/er_support_group', // Saran jika error
     };
   }
 }
