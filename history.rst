@@ -4,6 +4,8 @@
 Bug Fixes
 ~~~~~~~~~
 
+-  changelog.yml
+   (`d0947b9 <https://github.com/ErBots/npm-yt/commit/d0947b9d2e7fa7e474f2f77a5e9c3195c213dcf0>`__)
 -  mybe
    (`94f3ef1 <https://github.com/ErBots/npm-yt/commit/94f3ef1ea0c84f3dd17d02cc106e064b5f8f4b8e>`__)
 -  Unnecessary
