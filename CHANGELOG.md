@@ -7,6 +7,7 @@
 * add jsdocs comment ([01c4cc0](https://github.com/ErBots/npm-yt/commit/01c4cc05ff1bca8b6acabd5c78b71ce866854e64))
 * add template jsdocs ([1cbb693](https://github.com/ErBots/npm-yt/commit/1cbb693a28e08bb15c1a683300dd9901b62b9525))
 * changelog.yml ([d0947b9](https://github.com/ErBots/npm-yt/commit/d0947b9d2e7fa7e474f2f77a5e9c3195c213dcf0))
+* fix eror taffydb ([1cbc99e](https://github.com/ErBots/npm-yt/commit/1cbc99e624489057785dc117a9a89259c88798f2))
 * fixing import on mjs file ([a6e9aac](https://github.com/ErBots/npm-yt/commit/a6e9aac226607a251efae3033adbca0a8a8a0914))
 * import xnxx & bmkg ([e3f51f2](https://github.com/ErBots/npm-yt/commit/e3f51f2a63eb12b6e90b3fef03fba9bc7ba9ec4e))
 * jsdoc.json ([fa54925](https://github.com/ErBots/npm-yt/commit/fa54925f46e50d8d8bfac9396470439023f64584))
