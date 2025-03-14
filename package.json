@@ -31,7 +31,7 @@
     "axios": "latest",
     "conventional-changelog-conventionalcommits": "^8.0.0",
     "gpti": "latest",
-    "node-fetch": "^2.6.11",
+    "node-fetch": "^3.3.2",
     "os": "latest",
     "path": "^0.12.7",
     "unlimited-ai": "latest",
