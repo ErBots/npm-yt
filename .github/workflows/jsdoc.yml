@@ -28,7 +28,7 @@ jobs:
         run: npm install --save-dev jsdoc clean-jsdoc-theme
 
       - name: Create output directory
-        run: mkdir -p jsdocs  # Pastikan folder ada sebelum generate
+        run: mkdir -p jsdocs
 
       - name: Generate JSDoc
         run: npx jsdoc -c jsdoc.json
