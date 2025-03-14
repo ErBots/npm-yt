@@ -3,7 +3,7 @@ name: Deploy JSDoc to GitHub Pages
 on:
   push:
     branches:
-      - master  # Ganti dengan `main` jika repository kamu pakai `main`
+      - master  # Ganti dengan `main` jika pakai `main`
 
 permissions:
   contents: write
@@ -25,10 +25,10 @@ jobs:
         run: npm install
 
       - name: Install JSDoc & Dependencies
-        run: npm install --save-dev jsdoc minami taffydb
+        run: npm install --save-dev jsdoc clean-jsdoc-theme
 
       - name: Create output directory
-        run: mkdir -p jsdocs
+        run: mkdir -p jsdocs  # Pastikan folder ada sebelum generate
 
       - name: Generate JSDoc
         run: npx jsdoc -c jsdoc.json
