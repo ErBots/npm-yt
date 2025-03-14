@@ -3,7 +3,7 @@ name: Deploy JSDoc to GitHub Pages
 on:
   push:
     branches:
-      - master  # Ganti dengan `main` jika pakai `main`
+      - master  # Sesuaikan jika pakai `main`
 
 permissions:
   contents: write
@@ -24,11 +24,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install JSDoc & Dependencies
-        run: npm install --save-dev jsdoc clean-jsdoc-theme
+      - name: Install JSDoc & Theme
+        run: npm install --save-dev jsdoc better-docs
 
       - name: Create output directory
-        run: mkdir -p jsdocs 
+        run: mkdir -p jsdocs
 
       - name: Generate JSDoc
         run: npx jsdoc -c jsdoc.json
