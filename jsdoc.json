@@ -16,9 +16,11 @@
     },
     "ink-docstrap": {
       "theme": "cerulean",
-      "syntaxTheme": "default",
+      "syntaxTheme": "dark",
+      "linenums": true,
+      "includeSource": true,
       "systemName": "@er-npm/scraper Docs",
-      "footer": "Copyright © 2025 - ErNewDev0",
+      "footer": "Copyright © 2025 - @er-npm/scraper",
       "dateFormat": "MMMM Do YYYY, h:mm:ss a"
     }
   }
