@@ -8,16 +8,9 @@
     "destination": "jsdocs",
     "template": "node_modules/clean-jsdoc-theme" 
   },
-  "templates": {
-    "default": {
-      "staticFiles": {
-        "include": ["assets"]  
-      }
-    },
     "clean-jsdoc-theme": {
       "theme": "dark",
       "search": true,
       "linenums": true
-    }
   }
 }
