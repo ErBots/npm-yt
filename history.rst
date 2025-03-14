@@ -4,6 +4,8 @@
 Bug Fixes
 ~~~~~~~~~
 
+-  .github/workflows/jsdoc.yml
+   (`d848dac <https://github.com/ErBots/npm-yt/commit/d848dac64fb16d89929acedfe6a1154690a5d330>`__)
 -  add jsdocs comment
    (`01c4cc0 <https://github.com/ErBots/npm-yt/commit/01c4cc05ff1bca8b6acabd5c78b71ce866854e64>`__)
 -  changelog.yml
