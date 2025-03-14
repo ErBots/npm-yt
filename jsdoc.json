@@ -4,13 +4,17 @@
     "includePattern": ".js$",
     "exclude": ["node_modules"]
   },
+  "plugins": ["plugins/markdown"],
   "opts": {
     "destination": "jsdocs",
-    "template": "node_modules/clean-jsdoc-theme" 
+    "template": "node_modules/better-docs"
   },
-    "clean-jsdoc-theme": {
-      "theme": "dark",
-      "search": true,
-      "linenums": true
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "templates": {
+    "better-docs": {
+      "name": "@er-npm/scraper Documentation"
+    }
   }
 }
