@@ -17,6 +17,11 @@
 * Unnecessary ([f4a9d26](https://github.com/ErBots/npm-yt/commit/f4a9d26538d544a75863809cb3391a5ca2e1d061))
 
 
+### Features
+
+* add index.md ([e9ab845](https://github.com/ErBots/npm-yt/commit/e9ab845efece926d133df92a2ba43808226384be))
+
+
 
 ## [1.1.6](https://github.com/ErBots/npm-yt/compare/v1.1.0...v1.1.6) (2025-02-14)
 
