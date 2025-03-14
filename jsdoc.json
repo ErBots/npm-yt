@@ -6,15 +6,20 @@
   },
   "opts": {
     "destination": "jsdocs",
-    "template": "node_modules/ink-docstrap/template"
+    "template": "node_modules/ink-docstrap/template",
+    "encoding": "utf8"
   },
   "templates": {
-    "theme": "cerulean",
-    "navType": "inline",
-    "outputSourceFiles": true,
-    "outputSourcePath": true,
-    "systemName": "@er-npm/scraper Docs",
-    "footer": "Copyright © 2025 - My Project",
-    "dateFormat": "MMMM Do YYYY, h:mm:ss a"
+    "default": {
+      "outputSourceFiles": true,
+      "includeDate": true
+    },
+    "ink-docstrap": {
+      "theme": "cerulean",
+      "syntaxTheme": "default",
+      "systemName": "@er-npm/scraper Docs",
+      "footer": "Copyright © 2025 - ErNewDev0",
+      "dateFormat": "MMMM Do YYYY, h:mm:ss a"
+    }
   }
 }
