@@ -25,7 +25,7 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm install conventional-changelog-conventionalcommits
+        run: npm install -g conventional-changelog-cli conventional-changelog-conventionalcommits
 
       - name: Generate Changelog
         uses: TriPSs/conventional-changelog-action@v6
@@ -33,7 +33,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           git-message: "docs(changelog): update changelog [skip ci]"
           output-file: "CHANGELOG.md"
-          skip-on-empty: false  # Jangan skip walaupun kosong
+          skip-on-empty: false
           skip-version-file: false
           create-summary: true
           skip-bump: true
@@ -47,10 +47,10 @@ jobs:
 
       - name: Convert Markdown to ReStructuredText
         run: |
-          if [ -f CHANGELOG.md ]; then
+          if [ -s CHANGELOG.md ]; then
             pandoc CHANGELOG.md -o history.rst
           else
-            echo "No CHANGELOG.md found, skipping conversion."
+            echo "No significant changes detected." > history.rst
           fi
 
       - name: Verify RST File
@@ -60,15 +60,14 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Reset package-lock.json jika ada perubahan yang tidak diinginkan
+          
           git restore package-lock.json
-
+          
           git add CHANGELOG.md history.rst
-
-          # Commit tetap dibuat meskipun tidak ada perubahan signifikan
-          git commit -m "docs(changelog): update changelog [skip ci]" --allow-empty
-
-          # Hindari konflik dengan pull sebelum push
-          git pull --rebase
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m "docs(changelog): update changelog [skip ci]"
+            git pull --rebase || echo "Rebase failed, continuing..."
+            git push || echo "Push failed, please check manually."
+          else
+            echo "No changes to commit."
+          fi
