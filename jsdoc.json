@@ -4,17 +4,17 @@
     "includePattern": ".js$",
     "exclude": ["node_modules"]
   },
-  "plugins": ["plugins/markdown"],
   "opts": {
     "destination": "jsdocs",
-    "template": "node_modules/better-docs"
-  },
-  "tags": {
-    "allowUnknownTags": true
+    "template": "node_modules/ink-docstrap/template"
   },
   "templates": {
-    "better-docs": {
-      "name": "@er-npm/scraper Documentation"
-    }
+    "theme": "cerulean",
+    "navType": "inline",
+    "outputSourceFiles": true,
+    "outputSourcePath": true,
+    "systemName": "@er-npm/scraper Docs",
+    "footer": "Copyright © 2025 - My Project",
+    "dateFormat": "MMMM Do YYYY, h:mm:ss a"
   }
 }
