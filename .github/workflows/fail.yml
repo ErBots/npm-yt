@@ -14,9 +14,26 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     runs-on: ubuntu-latest
     steps:
-      - name: Create GitHub Issue
-        uses: JasonEtco/create-an-issue@v2
+      - name: Create Issue
+        uses: dacbd/create-issue-action@main
         with:
-          filename: .github/workf.md
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: |
+            [${{ github.event.workflow_run.name }}] failed during [${{ github.event_name }}]
+
+          assignees: ${{ github.actor }}
+          labels: Skill-Issue, Failure
+          body: |
+            ## Failure Report:
+            
+            > [!IMPORTANT]
+            > Details on failed run: [View Run](https://github.com/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }})
+    
+            - **Author**: @${{ github.event.workflow_run.actor }}
+            - **Branch**: `${{ github.event.workflow_run.head_branch }}`
+            - **Commit**: ${{ github.event.workflow_run.head_sha }}
+    
+            - [ ] **Task**: Bad Code Detected, fix the issue(s), and re-run until successful.
+    
+            > This issue was created automatically by GitHub, 
+            > **DO NOT** close this issue until resolved.
