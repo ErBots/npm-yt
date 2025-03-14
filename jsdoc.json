@@ -12,10 +12,11 @@
   "templates": {
     "default": {
       "outputSourceFiles": true,
+      "outputSourcePath": true,
       "includeDate": true
     },
     "ink-docstrap": {
-      "theme": "cerulean",
+      "theme": "slate",
       "syntaxTheme": "dark",
       "linenums": true,
       "includeSource": true,
