@@ -28,7 +28,7 @@
     "apis"
   ],
   "dependencies": {
-    "axios": "latest",
+    "axios": "1.9.0",
     "conventional-changelog-conventionalcommits": "^8.0.0",
     "gpti": "latest",
     "node-fetch": "^2.6.11",
